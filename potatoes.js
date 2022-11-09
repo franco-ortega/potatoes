@@ -13,3 +13,13 @@ const secondExpected = 22;
 
 if (secondAnswer === 22) console.log('Second answer, CORRECT');
 else console.log('Second answer, WRONG:', secondAnswer);
+
+const countAllThePotatoes = (...potatoes) => {
+  const count = potatoes.length;
+  const total = allThePotatoes(...potatoes);
+
+  return { count, total };
+};
+
+const potatoCountAndTotal = countAllThePotatoes(1, 2, 3);
+console.log(potatoCountAndTotal);
