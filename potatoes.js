@@ -1,5 +1,9 @@
 const allThePotatoes = (...args) => {
-  return args.reduce((a, c) => a + c);
+  return args.reduce((a, c) => {
+    if (typeof a === 'string') return a + ' ' + c;
+
+    return a + c;
+  });
 };
 
 const firstAnswer = allThePotatoes(1, 2, 3);
@@ -23,3 +27,10 @@ const countAllThePotatoes = (...potatoes) => {
 
 const potatoCountAndTotal = countAllThePotatoes(1, 2, 3);
 console.log(potatoCountAndTotal);
+
+const potatoWords = allThePotatoes(
+  'french fries',
+  'hash browns',
+  'mashed potatoes'
+);
+console.log(potatoWords);
