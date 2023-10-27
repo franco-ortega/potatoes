@@ -1,4 +1,4 @@
-const allThePotatoes = (...args) => {
+const sumAllPotatoes = (...args) => {
   return args.reduce((a, c) => {
     if (typeof a === 'string') return a + ' ' + c;
 
