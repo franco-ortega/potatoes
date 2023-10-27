@@ -6,6 +6,17 @@ const sumAllPotatoes = (...args) => {
   });
 };
 
+/////////////////////
+// function to check the answer
+
+const checkAnswer = (fn, answer, ...nums) => {
+  const fnAnswer = fun(nums);
+
+  if (fnAnswer === answer) console.log('Correct!');
+  else console.log('Incorrect :(');
+};
+/////////////////////
+
 const firstAnswer = allThePotatoes(1, 2, 3);
 const firstExpected = 6;
 
