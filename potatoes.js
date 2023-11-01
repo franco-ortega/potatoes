@@ -1,6 +1,6 @@
 const sumAllPotatoes = (nums) => {
   return nums.reduce((a, c) => {
-    if (typeof a === 'string') return a + ' ' + c;
+    if (typeof c === 'string') return a + ' ' + c;
 
     return a + c;
   });
