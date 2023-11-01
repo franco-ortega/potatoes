@@ -12,7 +12,7 @@ const sumAllPotatoes = (...args) => {
 const checkAnswer = (fn, answer, ...nums) => {
   const fnAnswer = fn(nums);
 
-  if (fnAnswer === answer) console.log('Correct!');
+  if (fnAnswer === answer) console.log('Correct!', fnAnswer);
   else console.log('Incorrect :(');
 };
 /////////////////////
