@@ -1,5 +1,5 @@
-const sumAllPotatoes = (args) => {
-  return args.reduce((a, c) => {
+const sumAllPotatoes = (nums) => {
+  return nums.reduce((a, c) => {
     if (typeof a === 'string') return a + ' ' + c;
 
     return a + c;
@@ -9,11 +9,11 @@ const sumAllPotatoes = (args) => {
 /////////////////////
 // function to check the answer
 
-const checkAnswer = (fn, answer, nums) => {
-  const fnAnswer = fn(nums);
+const checkAnswer = (fn, expected, args) => {
+  const actual = fn(args);
 
-  if (fnAnswer === answer) console.log('Correct!', fnAnswer);
-  else console.log('Incorrect :(', fnAnswer, nums);
+  if (actual === expected) console.log('Correct!', actual);
+  else console.log('Incorrect :(', actual);
 };
 /////////////////////
 
