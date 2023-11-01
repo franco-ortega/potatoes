@@ -10,14 +10,16 @@ const sumAllPotatoes = (...args) => {
 // function to check the answer
 
 const checkAnswer = (fn, answer, ...nums) => {
-  const fnAnswer = fn(nums);
+  const fnAnswer = fn(...nums);
 
   if (fnAnswer === answer) console.log('Correct!', fnAnswer);
-  else console.log('Incorrect :(');
+  else console.log('Incorrect :(', fnAnswer, nums);
 };
 /////////////////////
 
 console.log('testing...1, 2, 3...');
+
+checkAnswer(sumAllPotatoes, 6, 1, 2, 3);
 
 // const firstAnswer = allThePotatoes(1, 2, 3);
 // const firstExpected = 6;
