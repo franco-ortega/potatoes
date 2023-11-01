@@ -7,12 +7,12 @@ const sumAllPotatoes = (nums) => {
 };
 
 const multiplyPotatoes = (factors) => {
-  return factors.reduce((a, c) => {
-    if (typeof c === 'string') {
-      console.log('Error: not a number');
-      return;
-    }
+  if (typeof factors[0] !== 'number') {
+    console.log('Error: not a number');
+    return;
+  }
 
+  return factors.reduce((a, c) => {
     return a * c;
   });
 };
