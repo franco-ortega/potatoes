@@ -20,3 +20,4 @@ const checkAnswer = (fn, expected, args) => {
 console.log('testing...1, 2, 3...');
 
 checkAnswer(sumAllPotatoes, 6, [1, 2, 3]);
+checkAnswer(sumAllPotatoes, '1 2 3', ['1', '2', '3']);
