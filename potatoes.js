@@ -7,7 +7,7 @@ const sumAllPotatoes = (nums) => {
 };
 
 const multiplyPotatoes = (factors) => {
-  if (typeof factors[0] !== 'number') {
+  if (typeof Number(factors[0]) !== 'number') {
     console.log('Error: not a number');
     return;
   }
@@ -34,4 +34,4 @@ checkAnswer(sumAllPotatoes, 6, [1, 2, 3]);
 checkAnswer(sumAllPotatoes, '1 2 3', ['1', '2', '3']);
 checkAnswer(multiplyPotatoes, 16, [2, 8]);
 checkAnswer(multiplyPotatoes, 24, [2, 3, 4]);
-checkAnswer(multiplyPotatoes, '24', ['2', '3', '4']);
+checkAnswer(multiplyPotatoes, 24, ['2', '3', '4']);
